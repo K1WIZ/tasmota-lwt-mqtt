@@ -1,11 +1,3 @@
-since nobody answered my query, about 
-```
-a Wemos D1 mini running tasmota that has 'DeepSleepTime 120' set.  In homeassistant, the temperature shows "Unavailable" when sleeping.   How to make Homeassistant keep the last value displayed?
-```
-
-I came up with a python script to change the LWT of DS1820 sensors running tasmota.   This python script keeps such sensors "live" on Homeassistant and lets the temp value continue to be displayed while the tasmota temperature sensor deep sleeps.
-
-```
 import paho.mqtt.client as mqtt
 import daemon
 import logging
