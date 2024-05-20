@@ -35,4 +35,3 @@ with daemon.DaemonContext(
     stderr=open(os.devnull, 'w')
 ):
     run()
-```
